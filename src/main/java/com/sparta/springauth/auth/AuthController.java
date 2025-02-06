@@ -23,7 +23,7 @@ public class AuthController {
 
     public static final String AUTHORIZATION_HEADER = "Authorization";
 
-    private final JwtUtil jwtUtil = new JwtUtil();
+    private final JwtUtil jwtUtil;
 
     @GetMapping("/create-cookie")
     public String createCookie(HttpServletResponse res) {
